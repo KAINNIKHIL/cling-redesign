@@ -4,6 +4,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 const navItems = [
   { label: "Services", href: "#services" },
   { label: "Solutions", href: "#solutions" },
+  { label: "Approach", href: "#process" },
   { label: "Work", href: "#work" },
   { label: "About", href: "#about" },
 ];
