@@ -2,6 +2,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Services from "./components/Services";
 import Process from "./components/Process";
+import Portfolio from "./components/Portfolio";
 
 function App() {
   return (
@@ -12,8 +13,7 @@ function App() {
         <Hero />
         <Services />
         <Process />
-
-        <section id="work" className="h-screen" />
+        <Portfolio />
         <section id="contact" className="h-screen" />
       </main>
     </>
