@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import Process from "./components/Process";
 import Portfolio from "./components/Portfolio";
 import Innovation from "./components/Innovation";
+import WhyCling from "./components/WhyCling";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Process />
         <Portfolio />
         <Innovation />
+        <WhyCling />
         <section id="contact" className="h-screen" />
       </main>
     </>
