@@ -13,7 +13,7 @@ const Innovation = () => {
       className="relative overflow-hidden bg-white py-24 sm:py-28"
     >
       {/* Background glow */}
-      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-100/50 blur-3xl" />
+      <div className="pointer-events-none absolute left-1/2 top-1/2 h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-red-100/50 blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         <div className="overflow-hidden rounded-[2.5rem] bg-slate-950">
@@ -21,14 +21,14 @@ const Innovation = () => {
 
             {/* Left */}
             <div className="p-8 sm:p-12 lg:p-16">
-              <div className="inline-flex items-center gap-2 rounded-full border border-blue-400/20 bg-blue-400/10 px-4 py-2 text-sm font-semibold text-blue-300">
+              <div className="inline-flex items-center gap-2 rounded-full border border-red-400/20 bg-red-400/10 px-4 py-2 text-sm font-semibold text-red-300">
                 <Sparkles size={15} />
                 Innovation & AI
               </div>
 
               <h2 className="mt-7 max-w-xl text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl">
                 Building smarter
-                <span className="block text-blue-400">
+                <span className="block text-red-400">
                   digital solutions.
                 </span>
               </h2>
@@ -41,7 +41,7 @@ const Innovation = () => {
 
               <a
                 href="#contact"
-                className="group mt-9 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition-all duration-300 hover:bg-blue-600 hover:text-white"
+                className="group mt-9 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition-all duration-300 hover:bg-red-600 hover:text-white"
               >
                 Explore AI Solutions
                 <ArrowUpRight
@@ -65,47 +65,51 @@ const Innovation = () => {
               />
 
               {/* Central node */}
-              <div className="absolute left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-blue-400/30 bg-blue-500/10 shadow-2xl shadow-blue-500/20 backdrop-blur-xl">
+              <div className="absolute left-1/2 top-1/2 flex h-32 w-32 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-[2rem] border border-red-400/30 bg-red-500/10 shadow-2xl shadow-red-500/20 backdrop-blur-xl">
                 <BrainCircuit
                   size={52}
                   strokeWidth={1.5}
-                  className="text-blue-400"
+                  className="text-red-400"
                 />
               </div>
 
               {/* Connection lines */}
-              <div className="absolute left-[22%] top-[27%] h-px w-[28%] rotate-[25deg] bg-gradient-to-r from-transparent via-blue-400/50 to-blue-400/20" />
+              <div className="absolute left-[22%] top-[27%] h-px w-[28%] rotate-[25deg] bg-gradient-to-r from-transparent via-red-400/50 to-red-400/20" />
 
-              <div className="absolute right-[22%] top-[30%] h-px w-[27%] -rotate-[25deg] bg-gradient-to-r from-blue-400/20 via-blue-400/50 to-transparent" />
+              <div className="absolute right-[22%] top-[30%] h-px w-[27%] -rotate-[25deg] bg-gradient-to-r from-red-400/20 via-red-400/50 to-transparent" />
 
-              <div className="absolute bottom-[28%] left-[20%] h-px w-[30%] -rotate-[25deg] bg-gradient-to-r from-transparent via-violet-400/50 to-violet-400/20" />
+              <div className="absolute bottom-[28%] left-[20%] h-px w-[30%] -rotate-[25deg] bg-gradient-to-r from-transparent via-red-400/50 to-red-400/20" />
 
-              <div className="absolute bottom-[28%] right-[20%] h-px w-[30%] rotate-[25deg] bg-gradient-to-r from-violet-400/20 via-violet-400/50 to-transparent" />
+              <div className="absolute bottom-[28%] right-[20%] h-px w-[30%] rotate-[25deg] bg-gradient-to-r from-red-400/20 via-red-400/50 to-transparent" />
 
               {/* Floating cards */}
               <div className="absolute left-8 top-12 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-                <Bot className="text-blue-400" size={25} />
+                <Bot className="text-red-400" size={25} />
+
                 <p className="mt-2 text-xs font-semibold text-white">
                   Intelligent Systems
                 </p>
               </div>
 
               <div className="absolute right-8 top-16 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-                <Workflow className="text-violet-400" size={25} />
+                <Workflow className="text-red-400" size={25} />
+
                 <p className="mt-2 text-xs font-semibold text-white">
                   Automation
                 </p>
               </div>
 
               <div className="absolute bottom-10 left-12 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-                <Sparkles className="text-blue-400" size={25} />
+                <Sparkles className="text-red-400" size={25} />
+
                 <p className="mt-2 text-xs font-semibold text-white">
                   AI Experiences
                 </p>
               </div>
 
               <div className="absolute bottom-12 right-10 rounded-2xl border border-white/10 bg-white/5 p-4 backdrop-blur-xl">
-                <BrainCircuit className="text-violet-400" size={25} />
+                <BrainCircuit className="text-red-400" size={25} />
+
                 <p className="mt-2 text-xs font-semibold text-white">
                   Data & Intelligence
                 </p>
@@ -116,8 +120,9 @@ const Innovation = () => {
 
         {/* Supporting cards */}
         <div className="mt-6 grid gap-5 md:grid-cols-3">
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-            <p className="text-sm font-semibold text-blue-600">
+
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg hover:shadow-red-100/40">
+            <p className="text-sm font-semibold text-red-600">
               Technology
             </p>
 
@@ -131,8 +136,8 @@ const Innovation = () => {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-            <p className="text-sm font-semibold text-violet-600">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg hover:shadow-red-100/40">
+            <p className="text-sm font-semibold text-red-600">
               Intelligence
             </p>
 
@@ -146,8 +151,8 @@ const Innovation = () => {
             </p>
           </div>
 
-          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6">
-            <p className="text-sm font-semibold text-blue-600">
+          <div className="rounded-3xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg hover:shadow-red-100/40">
+            <p className="text-sm font-semibold text-red-600">
               Innovation
             </p>
 
@@ -160,6 +165,7 @@ const Innovation = () => {
               needs.
             </p>
           </div>
+
         </div>
       </div>
     </section>

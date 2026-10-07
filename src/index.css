@@ -19,11 +19,14 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 80px;
 }
 
 body {
   margin: 0;
   min-width: 320px;
+  background: #f8fafc;
+  overflow-x: hidden;
 }
 
 a {
@@ -33,4 +36,23 @@ a {
 button,
 a {
   -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  font: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+::selection {
+  background: #e21b2d;
+  color: #ffffff;
+}
+
+:focus-visible {
+  outline: 2px solid #e21b2d;
+  outline-offset: 3px;
 }

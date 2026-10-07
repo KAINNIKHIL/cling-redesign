@@ -9,13 +9,13 @@ const CTA = () => {
 
           {/* Contact information */}
           <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-red-600">
               Contact Us
             </p>
 
             <h2 className="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
               Let's start a
-              <span className="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+              <span className="block text-red-600">
                 conversation.
               </span>
             </h2>
@@ -27,8 +27,9 @@ const CTA = () => {
 
             <div className="mt-10 space-y-6">
 
+              {/* Address */}
               <div className="flex gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-100 text-red-600">
                   <MapPin size={20} />
                 </div>
 
@@ -44,8 +45,9 @@ const CTA = () => {
                 </div>
               </div>
 
+              {/* Phone */}
               <div className="flex gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-100 text-red-600">
                   <Phone size={20} />
                 </div>
 
@@ -56,15 +58,16 @@ const CTA = () => {
 
                   <a
                     href="tel:+918264469132"
-                    className="mt-1 block text-sm text-slate-500 hover:text-blue-600"
+                    className="mt-1 block text-sm text-slate-500 transition-colors hover:text-red-600"
                   >
                     +91 8264469132
                   </a>
                 </div>
               </div>
 
+              {/* Email */}
               <div className="flex gap-4">
-                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-red-100 text-red-600">
                   <Mail size={20} />
                 </div>
 
@@ -75,7 +78,7 @@ const CTA = () => {
 
                   <a
                     href="mailto:info@clinginfotech.com"
-                    className="mt-1 block text-sm text-slate-500 hover:text-blue-600"
+                    className="mt-1 block text-sm text-slate-500 transition-colors hover:text-red-600"
                   >
                     info@clinginfotech.com
                   </a>
@@ -98,13 +101,13 @@ const CTA = () => {
                 <input
                   type="text"
                   placeholder="Full Name"
-                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10"
                 />
 
                 <input
                   type="email"
                   placeholder="Email"
-                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10"
                 />
               </div>
 
@@ -112,25 +115,25 @@ const CTA = () => {
                 <input
                   type="tel"
                   placeholder="Phone"
-                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10"
                 />
 
                 <input
                   type="text"
                   placeholder="Company"
-                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10"
                 />
               </div>
 
               <textarea
                 rows="6"
                 placeholder="Message"
-                className="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                className="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition focus:border-red-500 focus:bg-white focus:ring-4 focus:ring-red-500/10"
               />
 
               <button
                 type="submit"
-                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-600"
+                className="w-full rounded-full bg-red-600 px-6 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20"
               >
                 Submit
               </button>

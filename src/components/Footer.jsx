@@ -1,7 +1,4 @@
-import {
-  ArrowUpRight,
-  Mail,
-} from "lucide-react";
+import { ArrowUpRight, Mail } from "lucide-react";
 
 import {
   FaFacebookF,
@@ -34,7 +31,7 @@ const Footer = () => {
 
             <a
               href="#contact"
-              className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-blue-400"
+              className="group mt-7 inline-flex items-center gap-2 text-sm font-semibold text-white transition-colors hover:text-red-400"
             >
               Start a conversation
               <ArrowUpRight
@@ -54,7 +51,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#services"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   Services
                 </a>
@@ -63,7 +60,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#process"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   Our Approach
                 </a>
@@ -72,7 +69,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#work"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   Our Work
                 </a>
@@ -81,7 +78,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#innovation"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   AI & Innovation
                 </a>
@@ -99,7 +96,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#about"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   About Us
                 </a>
@@ -108,7 +105,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#work"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   Portfolio
                 </a>
@@ -117,7 +114,7 @@ const Footer = () => {
               <li>
                 <a
                   href="#contact"
-                  className="text-sm text-slate-400 transition-colors hover:text-white"
+                  className="text-sm text-slate-400 transition-colors hover:text-red-400"
                 >
                   Contact
                 </a>
@@ -138,8 +135,9 @@ const Footer = () => {
               >
                 <Mail
                   size={18}
-                  className="mt-1 shrink-0 text-blue-400"
+                  className="mt-1 shrink-0 text-red-400"
                 />
+
                 <span>
                   Contact Cling InfoTech
                   <br />
@@ -159,30 +157,35 @@ const Footer = () => {
           </p>
 
           <div className="flex items-center gap-3">
-  <a
-    href="#"
-    aria-label="Facebook"
-    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-blue-400 hover:text-blue-400"
-  >
-    <FaFacebookF size={16} />
-  </a>
 
-  <a
-    href="#"
-    aria-label="Instagram"
-    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-blue-400 hover:text-blue-400"
-  >
-    <FaInstagram size={16} />
-  </a>
+            {/* Facebook */}
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-red-400 hover:bg-red-500/10 hover:text-red-400"
+            >
+              <FaFacebookF size={16} />
+            </a>
 
-  <a
-    href="#"
-    aria-label="LinkedIn"
-    className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-blue-400 hover:text-blue-400"
-  >
-    <FaLinkedinIn size={16} />
-  </a>
-</div>
+            {/* Instagram */}
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-red-400 hover:bg-red-500/10 hover:text-red-400"
+            >
+              <FaInstagram size={16} />
+            </a>
+
+            {/* LinkedIn */}
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-red-400 hover:bg-red-500/10 hover:text-red-400"
+            >
+              <FaLinkedinIn size={16} />
+            </a>
+
+          </div>
         </div>
       </div>
     </footer>

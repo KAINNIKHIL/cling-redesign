@@ -25,13 +25,18 @@ const Stats = () => {
           {stats.map((stat) => (
             <div
               key={stat.label}
-              className="px-4 text-center md:px-8"
+              className="group px-4 text-center md:px-8"
             >
-              <p className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+              {/* Number */}
+              <p className="text-3xl font-bold tracking-tight text-slate-950 transition-colors duration-300 group-hover:text-red-600 sm:text-4xl">
                 {stat.value}
               </p>
 
-              <p className="mt-2 text-sm font-medium text-slate-500 sm:text-base">
+              {/* Small accent */}
+              <div className="mx-auto mt-3 h-1 w-8 rounded-full bg-red-600 transition-all duration-300 group-hover:w-12" />
+
+              {/* Label */}
+              <p className="mt-3 text-sm font-medium text-slate-500 sm:text-base">
                 {stat.label}
               </p>
             </div>

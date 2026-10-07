@@ -3,7 +3,7 @@ import { ArrowUpRight, Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Services", href: "#services" },
-  { label: "Solutions", href: "#solutions" },
+  { label: "Solutions", href: "#services" },
   { label: "Approach", href: "#process" },
   { label: "Work", href: "#work" },
   { label: "AI & Innovation", href: "#innovation" },
@@ -30,11 +30,12 @@ const Navbar = () => {
     <header
       className={`fixed left-0 top-0 z-50 w-full transition-all duration-300 ${
         isScrolled
-          ? "border-b border-slate-200/80 bg-white/90 shadow-sm backdrop-blur-xl"
-          : "bg-transparent"
+          ? "border-b border-slate-200/80 bg-white/95 shadow-sm backdrop-blur-xl"
+          : "bg-white/80 backdrop-blur-md"
       }`}
     >
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 sm:px-8 lg:px-10">
+
         {/* Logo */}
         <a
           href="#"
@@ -55,7 +56,7 @@ const Navbar = () => {
             <a
               key={item.label}
               href={item.href}
-              className="text-sm font-medium text-slate-600 transition-colors hover:text-slate-950"
+              className="text-sm font-medium text-slate-600 transition-colors hover:text-red-600"
             >
               {item.label}
             </a>
@@ -65,9 +66,10 @@ const Navbar = () => {
         {/* Desktop CTA */}
         <a
           href="#contact"
-          className="group hidden items-center gap-2 rounded-full bg-slate-950 px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-blue-600 lg:flex"
+          className="group hidden items-center gap-2 rounded-full bg-red-600 px-5 py-2.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20 lg:flex"
         >
           Let's Talk
+
           <ArrowUpRight
             size={16}
             className="transition-transform duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
@@ -78,7 +80,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setMobileOpen((prev) => !prev)}
-          className="rounded-lg p-2 text-slate-900 lg:hidden"
+          className="rounded-lg p-2 text-slate-900 transition-colors hover:bg-red-50 hover:text-red-600 lg:hidden"
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
           {mobileOpen ? <X size={25} /> : <Menu size={25} />}
@@ -88,7 +90,9 @@ const Navbar = () => {
       {/* Mobile navigation */}
       <div
         className={`overflow-hidden border-t border-slate-200 bg-white transition-all duration-300 lg:hidden ${
-          mobileOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
+          mobileOpen
+            ? "max-h-[500px] opacity-100"
+            : "max-h-0 opacity-0"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl flex-col px-5 py-5 sm:px-8">
@@ -97,7 +101,7 @@ const Navbar = () => {
               key={item.label}
               href={item.href}
               onClick={closeMobile}
-              className="border-b border-slate-100 py-4 text-base font-medium text-slate-700 last:border-0"
+              className="border-b border-slate-100 py-4 text-base font-medium text-slate-700 transition-colors hover:text-red-600 last:border-0"
             >
               {item.label}
             </a>
@@ -106,7 +110,7 @@ const Navbar = () => {
           <a
             href="#contact"
             onClick={closeMobile}
-            className="mt-4 flex items-center justify-center gap-2 rounded-full bg-slate-950 px-5 py-3 text-sm font-semibold text-white"
+            className="mt-4 flex items-center justify-center gap-2 rounded-full bg-red-600 px-5 py-3 text-sm font-semibold text-white transition-colors hover:bg-red-700"
           >
             Let's Talk
             <ArrowUpRight size={16} />

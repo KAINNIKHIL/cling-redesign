@@ -43,16 +43,19 @@ const reasons = [
 const WhyCling = () => {
   return (
     <section
-      id="about"
+      id="why-cling"
       className="relative overflow-hidden bg-white py-24 sm:py-28"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      {/* Background glow */}
+      <div className="pointer-events-none absolute -left-40 top-20 h-96 w-96 rounded-full bg-red-50 blur-3xl" />
+      <div className="pointer-events-none absolute -right-40 bottom-0 h-96 w-96 rounded-full bg-red-50/70 blur-3xl" />
 
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-end">
           <div>
-            <div className="mb-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-blue-600">
-              <span className="h-2 w-2 rounded-full bg-blue-600" />
+            <div className="mb-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-red-600">
+              <span className="h-2 w-2 rounded-full bg-red-600" />
               Why Cling
             </div>
 
@@ -72,14 +75,14 @@ const WhyCling = () => {
 
         {/* Main content */}
         <div className="mt-16 grid gap-6 lg:grid-cols-[0.85fr_1.15fr]">
-
           {/* Statement card */}
           <div className="relative overflow-hidden rounded-[2rem] bg-slate-950 p-8 sm:p-10 lg:p-12">
-            <div className="absolute -right-20 -top-20 h-56 w-56 rounded-full bg-blue-600/20 blur-3xl" />
-            <div className="absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-violet-600/20 blur-3xl" />
+            {/* Red glow */}
+            <div className="pointer-events-none absolute -right-20 -top-20 h-56 w-56 rounded-full bg-red-600/20 blur-3xl" />
+            <div className="pointer-events-none absolute -bottom-20 -left-20 h-56 w-56 rounded-full bg-red-500/10 blur-3xl" />
 
             <div className="relative">
-              <p className="text-sm font-semibold uppercase tracking-wider text-blue-400">
+              <p className="text-sm font-semibold uppercase tracking-wider text-red-400">
                 Our philosophy
               </p>
 
@@ -98,9 +101,10 @@ const WhyCling = () => {
 
               <a
                 href="#contact"
-                className="group mt-9 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition-all duration-300 hover:bg-blue-600 hover:text-white"
+                className="group mt-9 inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20"
               >
                 Let's Work Together
+
                 <ArrowUpRight
                   size={17}
                   className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -117,23 +121,21 @@ const WhyCling = () => {
               return (
                 <div
                   key={reason.title}
-                  className={`group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:bg-white hover:shadow-xl hover:shadow-blue-100/40 ${
-                    index === reasons.length - 1
-                      ? "sm:col-span-2"
-                      : ""
+                  className={`group rounded-3xl border border-slate-200 bg-slate-50 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:bg-white hover:shadow-xl hover:shadow-red-100/40 ${
+                    index === reasons.length - 1 ? "sm:col-span-2" : ""
                   }`}
                 >
                   <div className="flex items-start justify-between">
-                    <div className="rounded-xl bg-white p-3 text-blue-600 shadow-sm">
+                    <div className="rounded-xl bg-red-50 p-3 text-red-600 transition-all duration-300 group-hover:bg-red-600 group-hover:text-white">
                       <Icon size={22} />
                     </div>
 
-                    <span className="text-sm font-bold text-slate-300">
+                    <span className="text-sm font-bold text-slate-300 transition-colors duration-300 group-hover:text-red-200">
                       0{index + 1}
                     </span>
                   </div>
 
-                  <h3 className="mt-6 text-xl font-bold text-slate-950">
+                  <h3 className="mt-6 text-xl font-bold text-slate-950 transition-colors duration-300 group-hover:text-red-600">
                     {reason.title}
                   </h3>
 

@@ -33,12 +33,16 @@ const Portfolio = () => {
       id="work"
       className="relative overflow-hidden bg-slate-50 py-24 sm:py-28"
     >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
+      {/* Soft red background glow */}
+      <div className="pointer-events-none absolute -right-40 top-20 h-96 w-96 rounded-full bg-red-100/60 blur-3xl" />
+      <div className="pointer-events-none absolute -left-40 bottom-20 h-80 w-80 rounded-full bg-red-50 blur-3xl" />
+
+      <div className="relative mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
         {/* Heading */}
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div className="max-w-3xl">
-            <div className="mb-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-blue-600">
-              <span className="h-2 w-2 rounded-full bg-blue-600" />
+            <div className="mb-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-red-600">
+              <span className="h-2 w-2 rounded-full bg-red-600" />
               Our Work
             </div>
 
@@ -57,12 +61,12 @@ const Portfolio = () => {
 
           <a
             href="#contact"
-            className="group inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition-all hover:border-blue-300 hover:text-blue-600"
+            className="group inline-flex w-fit items-center gap-2 rounded-full border border-slate-300 bg-white px-5 py-3 text-sm font-semibold text-slate-800 transition-all duration-300 hover:border-red-300 hover:text-red-600 hover:shadow-lg hover:shadow-red-100"
           >
             View Portfolio
             <ArrowUpRight
               size={17}
-              className="transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+              className="transition-transform duration-200 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
             />
           </a>
         </div>
@@ -72,26 +76,31 @@ const Portfolio = () => {
           {projects.map((project) => (
             <article
               key={project.title}
-              className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-slate-200/60"
+              className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-2xl hover:shadow-red-100/60"
             >
-              {/* Actual Cling image */}
+              {/* Image */}
               <div className="relative h-64 overflow-hidden bg-slate-100">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="h-60 w-60  transition-transform duration-500 group-hover:scale-105"
+                  className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
+
+                {/* Category badge */}
+                <div className="absolute left-5 top-5 rounded-full bg-white/95 px-3 py-1.5 text-xs font-semibold text-red-600 shadow-sm backdrop-blur">
+                  {project.category}
+                </div>
               </div>
 
               {/* Content */}
               <div className="p-7">
-                <p className="text-sm font-semibold text-blue-600">
+                <p className="text-sm font-semibold text-red-600">
                   {project.category}
                 </p>
 
-                <h3 className="mt-3 text-2xl font-bold text-slate-950">
+                <h3 className="mt-3 text-2xl font-bold text-slate-950 transition-colors duration-200 group-hover:text-red-600">
                   {project.title}
                 </h3>
 
@@ -104,7 +113,7 @@ const Portfolio = () => {
                     Explore
                   </span>
 
-                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 transition-all duration-300 group-hover:border-blue-600 group-hover:bg-blue-600 group-hover:text-white">
+                  <div className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-200 text-slate-600 transition-all duration-300 group-hover:border-red-600 group-hover:bg-red-600 group-hover:text-white">
                     <ExternalLink size={17} />
                   </div>
                 </div>
@@ -127,7 +136,7 @@ const Portfolio = () => {
 
           <a
             href="#contact"
-            className="inline-flex w-fit items-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition-colors hover:bg-blue-600"
+            className="inline-flex w-fit items-center gap-2 rounded-full bg-red-600 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20"
           >
             Start Your Project
             <ArrowUpRight size={17} />

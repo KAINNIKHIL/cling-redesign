@@ -1,4 +1,4 @@
-import { ArrowUpRight, Target, Eye, TrendingUp } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 const journey = [
   {
@@ -29,18 +29,18 @@ const journey = [
 
 const OurStory = () => {
   return (
-    <section id="story" className="bg-slate-50">
+    <section id="about" className="bg-slate-50">
       <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10">
 
         {/* Heading */}
         <div className="max-w-3xl">
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-red-600">
             Our Story
           </p>
 
           <h2 className="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
             A journey built around
-            <span className="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+            <span className="block text-red-600">
               technology and innovation.
             </span>
           </h2>
@@ -50,7 +50,7 @@ const OurStory = () => {
         <div className="mt-14 grid gap-10 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
 
           {/* Main story */}
-          <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition-shadow duration-300 hover:shadow-lg hover:shadow-red-100/30 sm:p-10">
             <p className="text-lg leading-8 text-slate-700">
               We are a company with multifarious IT services like ERPs,
               Websites, App Development, Support, Innovations, Projects,
@@ -71,9 +71,10 @@ const OurStory = () => {
 
             <a
               href="#contact"
-              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-slate-950 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-600"
+              className="group mt-8 inline-flex items-center gap-2 rounded-full bg-red-600 px-6 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:bg-red-700 hover:shadow-lg hover:shadow-red-600/20"
             >
               Let's Talk
+
               <ArrowUpRight
                 size={17}
                 className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
@@ -84,8 +85,10 @@ const OurStory = () => {
           {/* Vision / Mission */}
           <div className="space-y-5">
 
-            <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm">
+            {/* Vision */}
+            <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg hover:shadow-red-100/30">
               
+
               <h3 className="mt-6 text-xl font-bold text-slate-950">
                 Our Vision
               </h3>
@@ -104,9 +107,9 @@ const OurStory = () => {
               </p>
             </div>
 
-            <div className="rounded-[2rem] bg-slate-950 p-7 text-white shadow-xl shadow-slate-300/30">
+            {/* Mission */}
+            <div className="rounded-[2rem] bg-slate-950 p-7 text-white shadow-xl shadow-red-100/20">
               
-
               <h3 className="mt-6 text-xl font-bold">
                 Our Mission
               </h3>
@@ -129,27 +132,23 @@ const OurStory = () => {
         {/* Journey */}
         <div className="mt-24">
 
-          <div className="flex items-end justify-between gap-6">
-            <div>
-              <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">
-                Our Journey
-              </p>
+          <div>
+            <p className="mb-3 text-sm font-semibold uppercase tracking-[0.18em] text-red-600">
+              Our Journey
+            </p>
 
-              <h3 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-                A journey as dynamic as us.
-              </h3>
-            </div>
-
-            
+            <h3 className="text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
+              A journey as dynamic as us.
+            </h3>
           </div>
 
           <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {journey.map((item) => (
               <div
                 key={item.year}
-                className="group rounded-3xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-blue-200 hover:shadow-lg hover:shadow-blue-100/40"
+                className="group rounded-3xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:-translate-y-1 hover:border-red-200 hover:shadow-lg hover:shadow-red-100/40"
               >
-                <p className="text-3xl font-bold text-blue-600">
+                <p className="text-3xl font-bold text-red-600">
                   {item.year}
                 </p>
 
@@ -160,6 +159,8 @@ const OurStory = () => {
                 <p className="mt-3 text-sm leading-7 text-slate-600">
                   {item.description}
                 </p>
+
+                <div className="mt-5 h-1 w-8 rounded-full bg-red-600 transition-all duration-300 group-hover:w-14" />
               </div>
             ))}
           </div>
