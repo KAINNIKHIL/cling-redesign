@@ -5,6 +5,7 @@ import Process from "./components/Process";
 import Portfolio from "./components/Portfolio";
 import Innovation from "./components/Innovation";
 import WhyCling from "./components/WhyCling";
+import CTA from "./components/CTA";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
         <Portfolio />
         <Innovation />
         <WhyCling />
-        <section id="contact" className="h-screen" />
+        <CTA />
       </main>
     </>
   );
