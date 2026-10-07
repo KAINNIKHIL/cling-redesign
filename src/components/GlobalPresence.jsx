@@ -77,12 +77,49 @@ const GlobalPresence = () => {
 
             {/* Client visual */}
             <div className="mt-10 grid grid-cols-3 gap-3">
-              <div className="h-16 rounded-2xl border border-slate-200 bg-white" />
-              <div className="h-16 rounded-2xl border border-slate-200 bg-white" />
-              <div className="h-16 rounded-2xl border border-slate-200 bg-white" />
-              <div className="h-16 rounded-2xl border border-slate-200 bg-white" />
-              <div className="h-16 rounded-2xl border border-slate-200 bg-white" />
-              <div className="h-16 rounded-2xl border border-slate-200 bg-white" />
+              <div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fepay-later-1760612413032.png&w=1080&q=75"
+    alt="e pay later"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+              <div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fapptrove-1760612415831.jpeg&w=1080&q=75"
+    alt="apptrove"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=%2Fassests%2Fclients%2Fjumpiefav2.png&w=1080&q=75"
+    alt="jumpie"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fskuad-1760612417294.jpeg&w=1080&q=75"
+    alt="skuad"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fforescribe-1760612416165.jpeg&w=1080&q=75"
+    alt="forescribe"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fpiaah-1760612416885.jpeg&w=1080&q=75"
+    alt="PIAHH"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+
             </div>
           </div>
 

@@ -6,21 +6,24 @@ const projects = [
     title: "Digital Experiences",
     description:
       "Web solutions designed around business goals, usability, and modern digital experiences.",
-    gradient: "from-blue-600 to-indigo-600",
+    image:
+      "https://clinginfotech.com/_next/image?url=%2Fassests%2Fservices2.png&w=1080&q=75",
   },
   {
     category: "App Development",
     title: "Mobile Solutions",
     description:
       "Application experiences built to help businesses connect with their users across devices.",
-    gradient: "from-violet-600 to-purple-600",
+    image:
+      "https://clinginfotech.com/_next/image?url=%2Fassests%2Fservices3.png&w=1080&q=75",
   },
   {
     category: "Enterprise Solutions",
     title: "Custom Platforms",
     description:
       "Purpose-built digital platforms designed around specific business requirements.",
-    gradient: "from-slate-800 to-slate-950",
+    image:
+      "https://clinginfotech.com/_next/image?url=%2Fassests%2Fservices5.png&w=1080&q=75",
   },
 ];
 
@@ -31,7 +34,6 @@ const Portfolio = () => {
       className="relative overflow-hidden bg-slate-50 py-24 sm:py-28"
     >
       <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-
         {/* Heading */}
         <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
           <div className="max-w-3xl">
@@ -65,38 +67,22 @@ const Portfolio = () => {
           </a>
         </div>
 
-        {/* Project cards */}
+        {/* Cards */}
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
           {projects.map((project) => (
             <article
               key={project.title}
               className="group overflow-hidden rounded-[2rem] border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-slate-200/60"
             >
-              {/* Visual */}
-              <div
-                className={`relative h-64 overflow-hidden bg-gradient-to-br ${project.gradient} p-6`}
-              >
-                {/* Decorative UI */}
-                <div className="absolute inset-6 rounded-2xl border border-white/20 bg-white/10 backdrop-blur-sm transition-transform duration-500 group-hover:scale-[1.03]" />
+              {/* Actual Cling image */}
+              <div className="relative h-64 overflow-hidden bg-slate-100">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="h-60 w-60  transition-transform duration-500 group-hover:scale-105"
+                />
 
-                <div className="absolute left-10 top-10 rounded-xl bg-white/15 p-4 backdrop-blur-md">
-                  <div className="h-3 w-20 rounded-full bg-white/70" />
-                  <div className="mt-3 h-2 w-28 rounded-full bg-white/30" />
-                  <div className="mt-5 grid grid-cols-3 gap-2">
-                    <div className="h-10 w-10 rounded-lg bg-white/20" />
-                    <div className="h-10 w-10 rounded-lg bg-white/30" />
-                    <div className="h-10 w-10 rounded-lg bg-white/15" />
-                  </div>
-                </div>
-
-                <div className="absolute bottom-8 right-8 rounded-xl bg-white p-4 shadow-xl">
-                  <div className="flex items-center gap-2">
-                    <span className="h-2.5 w-2.5 rounded-full bg-blue-500" />
-                    <span className="text-xs font-semibold text-slate-700">
-                      Digital Solution
-                    </span>
-                  </div>
-                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent" />
               </div>
 
               {/* Content */}

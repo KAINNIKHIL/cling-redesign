@@ -1,69 +1,143 @@
-import { ArrowUpRight, MessageCircle } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section
-      id="contact"
-      className="relative overflow-hidden bg-slate-50 py-24 sm:py-28"
-    >
-      <div className="mx-auto max-w-7xl px-5 sm:px-8 lg:px-10">
-        <div className="relative overflow-hidden rounded-[2.5rem] bg-slate-950 px-7 py-16 text-center sm:px-12 sm:py-20 lg:px-20 lg:py-24">
-          {/* Background glow */}
-          <div className="pointer-events-none absolute -left-32 -top-32 h-80 w-80 rounded-full bg-blue-600/20 blur-3xl" />
+    <section id="contact" className="bg-slate-50">
+      <div className="mx-auto max-w-7xl px-5 py-24 sm:px-8 lg:px-10">
 
-          <div className="pointer-events-none absolute -bottom-32 -right-32 h-80 w-80 rounded-full bg-violet-600/20 blur-3xl" />
+        <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr]">
 
-          {/* Grid */}
-          <div
-            className="pointer-events-none absolute inset-0 opacity-10"
-            style={{
-              backgroundImage:
-                "linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)",
-              backgroundSize: "50px 50px",
-            }}
-          />
-
-          <div className="relative mx-auto max-w-3xl">
-            <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 text-blue-400 backdrop-blur-sm">
-              <MessageCircle size={27} />
-            </div>
-
-            <p className="mt-7 text-sm font-semibold uppercase tracking-[0.2em] text-blue-400">
-              Let's Build Something
+          {/* Contact information */}
+          <div>
+            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.18em] text-blue-600">
+              Contact Us
             </p>
 
-            <h2 className="mt-5 text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Have an idea?
-              <span className="block text-slate-400">
-                Let's make it happen.
+            <h2 className="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl">
+              Let's start a
+              <span className="block bg-gradient-to-r from-blue-600 to-violet-600 bg-clip-text text-transparent">
+                conversation.
               </span>
             </h2>
 
-            <p className="mx-auto mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Tell us what you're building, what you're trying to solve, or
-              simply where you want to start.
+            <p className="mt-6 max-w-lg leading-8 text-slate-600">
+              Have an idea, project, or requirement? Send us a message and
+              let's discuss how Cling InfoTech can help.
             </p>
 
-            <div className="mt-9 flex flex-col justify-center gap-4 sm:flex-row">
-              <a
-                href="mailto:info@clinginfotech.com"
-                className="group inline-flex items-center justify-center gap-2 rounded-full bg-white px-7 py-3.5 text-sm font-semibold text-slate-950 transition-all duration-300 hover:bg-blue-600 hover:text-white"
-              >
-                Start a Conversation
-                <ArrowUpRight
-                  size={17}
-                  className="transition-transform duration-300 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
-                />
-              </a>
+            <div className="mt-10 space-y-6">
 
-              <a
-  href="#contact"
-  className="inline-flex items-center justify-center rounded-full border border-white/20 px-7 py-3.5 text-sm font-semibold text-white transition-all duration-300 hover:border-white/40 hover:bg-white/10"
->
-  Talk to Us
-</a>
+              <div className="flex gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                  <MapPin size={20} />
+                </div>
+
+                <div>
+                  <p className="font-semibold text-slate-950">
+                    Head Office — Noida
+                  </p>
+
+                  <p className="mt-1 text-sm leading-6 text-slate-500">
+                    130, 131, 132, 2nd Floor, Wave Galleria,
+                    Wave City, NH-24, Noida, Uttar Pradesh - 201015
+                  </p>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                  <Phone size={20} />
+                </div>
+
+                <div>
+                  <p className="font-semibold text-slate-950">
+                    Phone
+                  </p>
+
+                  <a
+                    href="tel:+918264469132"
+                    className="mt-1 block text-sm text-slate-500 hover:text-blue-600"
+                  >
+                    +91 8264469132
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex gap-4">
+                <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-blue-100 text-blue-600">
+                  <Mail size={20} />
+                </div>
+
+                <div>
+                  <p className="font-semibold text-slate-950">
+                    Email
+                  </p>
+
+                  <a
+                    href="mailto:info@clinginfotech.com"
+                    className="mt-1 block text-sm text-slate-500 hover:text-blue-600"
+                  >
+                    info@clinginfotech.com
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
+
+          {/* Form */}
+          <div className="rounded-[2rem] border border-slate-200 bg-white p-7 shadow-sm sm:p-10">
+
+            <h3 className="text-2xl font-bold text-slate-950">
+              Send us a message
+            </h3>
+
+            <form className="mt-8 space-y-5">
+
+              <div className="grid gap-5 sm:grid-cols-2">
+                <input
+                  type="text"
+                  placeholder="Full Name"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                />
+
+                <input
+                  type="email"
+                  placeholder="Email"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                />
+              </div>
+
+              <div className="grid gap-5 sm:grid-cols-2">
+                <input
+                  type="tel"
+                  placeholder="Phone"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                />
+
+                <input
+                  type="text"
+                  placeholder="Company"
+                  className="h-13 w-full rounded-xl border border-slate-200 bg-slate-50 px-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+                />
+              </div>
+
+              <textarea
+                rows="6"
+                placeholder="Message"
+                className="w-full resize-none rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10"
+              />
+
+              <button
+                type="submit"
+                className="w-full rounded-full bg-slate-950 px-6 py-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-blue-600"
+              >
+                Submit
+              </button>
+
+            </form>
+          </div>
+
         </div>
       </div>
     </section>
