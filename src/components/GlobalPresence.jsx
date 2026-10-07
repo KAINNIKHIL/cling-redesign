@@ -48,13 +48,77 @@ const GlobalPresence = () => {
               </p>
 
               {/* Visual map area */}
-              <div className="mt-10 flex min-h-[120px] items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03]">
-                <Globe2
-                  size={82}
-                  strokeWidth={1}
-                  className="text-blue-400/50"
-                />
-              </div>
+              {/* Countries */}
+<div className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
+  {[
+    {
+      name: "India",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fin.png&w=640&q=75",
+    },
+    {
+      name: "Saudi Arabia",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fsa.png&w=640&q=75",
+    },
+    {
+      name: "South Africa",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fza.png&w=640&q=75",
+    },
+    {
+      name: "USA",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fus.png&w=640&q=75",
+    },
+    {
+      name: "Dubai",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fae.png&w=640&q=75",
+    },
+    {
+      name: "Australia",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-portfolio-video.s3.ap-south-1.amazonaws.com%2Fcountries%2F1777036162773-australia-flag-on-the-texture-cloth-modern-australian-flag-design-with-sleek-and-contemporary-elements-photo.jpg&w=640&q=75",
+    },
+    {
+      name: "United Kingdom",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-portfolio-video.s3.ap-south-1.amazonaws.com%2Fcountries%2F1777037091432-uk.webp&w=640&q=75",
+    },
+    {
+      name: "Singapore",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fsg.png&w=640&q=75",
+    },
+    {
+      name: "Ireland",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fie.png&w=640&q=75",
+    },
+    {
+      name: "Spain",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-portfolio-video.s3.ap-south-1.amazonaws.com%2Fcountries%2F1777037166863-spain.webp&w=640&q=75",
+    },
+    {
+      name: "Mautitius",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-portfolio-video.s3.ap-south-1.amazonaws.com%2Fcountries%2F1777036087544-mauritious.webp&w=640&q=75",
+    },
+    {
+      name: "Oman",
+      flag: "https://clinginfotech.com/_next/image?url=https%3A%2F%2Fflagcdn.com%2Fw320%2Fom.png&w=640&q=75",
+    },
+    
+  ].map((country) => (
+    <div
+      key={country.name}
+      className="group rounded-2xl border border-white/10 bg-white/[0.05] p-4 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-white/[0.08]"
+    >
+      <div className="flex h-14 items-center justify-center overflow-hidden rounded-xl bg-white/10">
+        <img
+          src={country.flag}
+          alt={`${country.name} flag`}
+          className="h-full w-full object-cover"
+        />
+      </div>
+
+      <p className="mt-3 text-xs font-medium text-slate-300">
+        {country.name}
+      </p>
+    </div>
+  ))}
+</div>
             </div>
           </div>
 
@@ -118,6 +182,75 @@ const GlobalPresence = () => {
     alt="PIAHH"
     className="max-h-10 w-auto object-contain"
   />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=%2Fassests%2Fclients%2Fsscl-erp.jpeg&w=1080&q=75"
+    alt="Se7ven Seas Lines"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=%2Fassests%2Fclients%2Fsunshine.jpeg&w=1080&q=75"
+    alt="The Sunshine"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=%2Fassests%2Fclients%2Fdelhi-public-school.png&w=1080&q=75"
+    alt="DIS"
+    className="max-h-10 w-auto object-contain"
+  />
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fwings-rehabilitation-1760612418801.png&w=1080&q=75"
+    alt="Wings"
+    className="max-h-10 w-auto object-contain"
+  />
+  
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fsagitta-1760612411988.jpeg&w=1080&q=75"
+    alt="Sagitta"
+    className="max-h-10 w-auto object-contain"
+  />
+  
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fmatrix-solutions-1760612411095.jpeg&w=1080&q=75"
+    alt="Matrix"
+    className="max-h-10 w-auto object-contain"
+  />
+  
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fparashar-1760612410064.png&w=1080&q=75"
+    alt="Prashar"
+    className="max-h-10 w-auto object-contain"
+  />
+  
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fmatchme-1760612408758.jpeg&w=1080&q=75"
+    alt="MatchMe"
+    className="max-h-10 w-auto object-contain"
+  />
+  
+</div>
+<div className="flex h-16 items-center justify-center rounded-2xl border border-slate-200 bg-white px-6">
+  <img
+    src="https://clinginfotech.com/_next/image?url=https%3A%2F%2Fcling-project.s3.ap-south-1.amazonaws.com%2Flogos%2Fminthr-1760612408304.png&w=1080&q=75"
+    alt="MintHR"
+    className="max-h-10 w-auto object-contain"
+  />
+  
 </div>
 
             </div>

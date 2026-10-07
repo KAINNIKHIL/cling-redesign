@@ -88,7 +88,7 @@ const Navbar = () => {
       {/* Mobile navigation */}
       <div
         className={`overflow-hidden border-t border-slate-200 bg-white transition-all duration-300 lg:hidden ${
-          mobileOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+          mobileOpen ? "max-h-80 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
         <nav className="mx-auto flex max-w-7xl flex-col px-5 py-5 sm:px-8">
