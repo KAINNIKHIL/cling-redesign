@@ -43,7 +43,7 @@ const Portfolio = () => {
           <div className="max-w-3xl">
             <div className="mb-5 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-red-600">
               <span className="h-2 w-2 rounded-full bg-red-600" />
-              Our Work
+              Our Services
             </div>
 
             <h2 className="text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">

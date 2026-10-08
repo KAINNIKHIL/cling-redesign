@@ -1,7 +1,6 @@
 import { ArrowUpRight, Mail } from "lucide-react";
 
 import {
-  FaFacebookF,
   FaInstagram,
   FaLinkedinIn,
 } from "react-icons/fa";
@@ -152,24 +151,14 @@ const Footer = () => {
         <div className="flex flex-col gap-6 py-7 sm:flex-row sm:items-center sm:justify-between">
 
           <p className="text-sm text-slate-500">
-            © {new Date().getFullYear()} Cling Info Tech Works Private Limited.
-            All rights reserved.
+            Copyright © Cling Infotech All Rights Reserved
           </p>
 
           <div className="flex items-center gap-3">
 
-            {/* Facebook */}
-            <a
-              href="#"
-              aria-label="Facebook"
-              className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-red-400 hover:bg-red-500/10 hover:text-red-400"
-            >
-              <FaFacebookF size={16} />
-            </a>
-
             {/* Instagram */}
             <a
-              href="#"
+              href="https://www.instagram.com/clinginfotechworks/"
               aria-label="Instagram"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-red-400 hover:bg-red-500/10 hover:text-red-400"
             >
@@ -178,7 +167,7 @@ const Footer = () => {
 
             {/* LinkedIn */}
             <a
-              href="#"
+              href="https://www.linkedin.com/company/cling-multi-solutions-pvt-ltd/"
               aria-label="LinkedIn"
               className="flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-slate-400 transition-all hover:border-red-400 hover:bg-red-500/10 hover:text-red-400"
             >

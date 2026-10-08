@@ -24,9 +24,9 @@ function App() {
         <Hero />
         <Stats />
         <Services />
-        <OurStory />
         <GlobalPresence />
         <Process />
+        <OurStory />
         <Portfolio />
         <Innovation />
         <WhyCling />
