@@ -17,7 +17,7 @@ const Footer = () => {
           <div>
             <a href="#" className="inline-flex items-center">
               <img
-                src="/src/assets/cling-logo.png"
+                src="assets/cling-logo.png"
                 alt="Cling InfoTech"
                 className="h-11 w-auto object-contain"
               />

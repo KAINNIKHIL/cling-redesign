@@ -113,7 +113,7 @@ const Navbar = () => {
           aria-label="Cling InfoTech home"
         >
           <img
-            src="/src/assets/cling-logo.png"
+            src="/assets/cling-logo.png"
             alt="Cling InfoTech"
             className="h-10 w-auto object-contain"
           />
